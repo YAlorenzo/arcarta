@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  scroll-behavior: smooth;
+}
+body{
+  color: #322F2E;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+}
+.fix-container{
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.animate_arrow {
+  transform: translateX(0);
+}
+
+.start_animate_arrow:hover+.animate_arrow {
+  transform: translateX(10px);
+}
+.slide_mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  height: 200px;
+}
+.item-shadow{
+  box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.08);
+}
+.gradient-backgraund {
+  background: linear-gradient(to bottom, #FFF8EE, #FFFFFF);
+}
